@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <label>Nom du produit</label>
+        <name>lbl_Product_Name</name>
+    </customLabels>
+    <customLabels>
+        <label>Quantité</label>
+        <name>lbl_Quantity</name>
+    </customLabels>
+    <customLabels>
+        <label>Prix unitaire</label>
+        <name>lbl_Unit_Price</name>
+    </customLabels>
+    <customLabels>
+        <label>Prix Total</label>
+        <name>lbl_Total_Price</name>
+    </customLabels>
+    <customLabels>
+        <label>Quantité en Stock</label>
+        <name>lbl_Quantity_In_Stock</name>
+    </customLabels>
+    <customLabels>
+        <label>Supprimer</label>
+        <name>lbl_Delete</name>
+    </customLabels>
+    <customLabels>
+        <label>Voir produit</label>
+        <name>lbl_See_Product</name>
+    </customLabels>
+    <customLabels>
+        <label>Opportunité produits</label>
+        <name>lbl_Opportunity_Products</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous avez au moins une ligne avec un problème de quantité, veuillez supprimer cette ligne ou réduire sa quantité.
+Si vous avez absolument besoin de plus de produits, veuillez contacter votre administrateur système.</label>
+        <name>lbl_Quantity_Problem_Message</name>
+    </customLabels>
+    <customLabels>
+        <label>Votre opportunité ne peut pas être mise à jour car vous avez un souci de quantité sur vos lignes.</label>
+        <name>lbl_Opportunity_Update_Error</name>
+    </customLabels>
+    <customLabels>
+        <label>Vous n&apos;avez aucune ligne de produits pour le moment.
+                1. Veuillez tout d&apos;abord sélectionner un Catalogue (Pricebook)
+                2. Sélectionnez ensuite les produits à ajouter.</label>
+        <name>lbl_No_Product_Lines_Message</name>
+    </customLabels>
+</Translations>

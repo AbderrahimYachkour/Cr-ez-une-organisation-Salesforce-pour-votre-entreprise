@@ -1,0 +1,74 @@
+<template>
+    <lightning-card title={labels.title} icon-name="standard:opportunity">
+
+        <template lwc:if={hasProducts}>
+            <div class="slds-p-around_small">
+                <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col">{labels.productName}</th>
+                            <th scope="col">{labels.unitPrice}</th>
+                            <th scope="col">{labels.totalPrice}</th>
+                            <th scope="col">{labels.quantity}</th>
+                            <th scope="col">{labels.quantityInStock}</th>
+                            <th scope="col">{labels.delete}</th>
+                            <th scope="col" lwc:if={isAdmin}>{labels.seeProduct}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={products} for:item="product">
+                            <tr key={product.id}>
+                                <td>{product.name}</td>
+                                <td>
+                                    <lightning-formatted-number
+                                        value={product.unitPrice}
+                                        format-style="currency">
+                                    </lightning-formatted-number>
+                                </td>
+                                <td>
+                                    <lightning-formatted-number
+                                        value={product.totalPrice}
+                                        format-style="currency">
+                                    </lightning-formatted-number>
+                                </td>
+                                <td>{product.quantity}</td>
+                                <td class={product.stockCellClass}>{product.quantityInStock}</td>
+                                <td>
+                                    <lightning-button-icon
+                                        icon-name="utility:delete"
+                                        variant="bare"
+                                        data-id={product.id}
+                                        onclick={handleDelete}
+                                        alternative-text={labels.delete}>
+                                    </lightning-button-icon>
+                                </td>
+                                <td lwc:if={isAdmin}>
+                                    <lightning-button
+                                        label={labels.seeProduct}
+                                        icon-name="utility:preview"
+                                        variant="brand"
+                                        data-product-id={product.productId}
+                                        onclick={handleViewProduct}>
+                                    </lightning-button>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+
+                <template lwc:if={hasAnyProblem}>
+                    <div class="slds-p-around_small slds-text-color_destructive slds-m-top_small">
+                        {labels.quantityProblem}
+                    </div>
+                </template>
+            </div>
+        </template>
+
+        <template lwc:else>
+            <div class="slds-p-around_medium slds-text-align_center">
+                <p>{labels.empty}</p>
+            </div>
+        </template>
+
+    </lightning-card>
+</template>

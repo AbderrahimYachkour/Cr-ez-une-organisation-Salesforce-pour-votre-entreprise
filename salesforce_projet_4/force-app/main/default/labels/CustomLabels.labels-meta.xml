@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>lbl_Product_Name</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Product Name column header</shortDescription>
+        <value>Product Name</value>
+    </labels>
+    <labels>
+        <fullName>lbl_Quantity</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quantity column header</shortDescription>
+        <value>Quantity</value>
+    </labels>
+    <labels>
+        <fullName>lbl_Unit_Price</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Unit Price column header</shortDescription>
+        <value>Unit Price</value>
+    </labels>
+    <labels>
+        <fullName>lbl_Total_Price</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Total Price column header</shortDescription>
+        <value>Total Price</value>
+    </labels>
+    <labels>
+        <fullName>lbl_Quantity_In_Stock</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quantity In Stock column header</shortDescription>
+        <value>Quantity in stock</value>
+    </labels>
+    <labels>
+        <fullName>lbl_Delete</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete button label</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>lbl_See_Product</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>See Product button label</shortDescription>
+        <value>See product</value>
+    </labels>
+    <labels>
+        <fullName>lbl_Opportunity_Products</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Products component title</shortDescription>
+        <value>Opportunity products</value>
+    </labels>
+    <labels>
+        <fullName>lbl_Quantity_Problem_Message</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Quantity problem inline message (UI)</shortDescription>
+        <value>You have at least one line with a quantity problem, please delete this line or reduce its quantity.
+If you absolutely need more products, please contact your system administrator.</value>
+    </labels>
+    <labels>
+        <fullName>lbl_Opportunity_Update_Error</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Closed Won update error (trigger)</shortDescription>
+        <value>Your opportunity cannot be updated because you have a quantity problem on your lines.</value>
+    </labels>
+    <labels>
+        <fullName>lbl_No_Product_Lines_Message</fullName>
+        <categories>Vitesse</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Empty state message when no opportunity products</shortDescription>
+        <value>You don&apos;t have any product lines at the moment.
+                1. First select a Catalog (Pricebook)
+                2. Then select the products you wish to add.</value>
+    </labels>
+</CustomLabels>
